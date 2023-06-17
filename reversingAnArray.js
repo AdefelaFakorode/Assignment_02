@@ -1,20 +1,10 @@
-function reverseArray(array){
-    let stack = [];
-    let finalArray = [];
-    let lastIndex = array.length -1;
-    for(let i = lastIndex; i >= 0; i--){
-        finalArray.push(array[i]);
-    }
-    return finalArray;
-
-    for(let i = 0; i < finalArray.length; i++){
-        
-
-    }
+function reverseArray(array) {
+  let stack = [];
+  let lastIndex = array.length - 1;
+  for (let i = lastIndex; i >= 0; i--) {
+    stack.push(array[i]);
+  }
+  return stack;
 }
-
-
-
-
-let letters = ['A','B','C'];
+let letters = ["A", "B", "C"];
 console.log(reverseArray(letters));
