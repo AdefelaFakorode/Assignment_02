@@ -1,3 +1,4 @@
+/*
 function myMap(array) {
     let result = [];
     for (let i = 0; i < array.length; i++) {
@@ -5,17 +6,19 @@ function myMap(array) {
     }
     return result;
 }
-//console.log(myMap([1,2,3,4,5]))
+console.log(myMap([1,2,3,4,5]))
+*/
 
-function square(number) {
-    return number * number;
-}
-
-function myMAP(array, callback) {
+function myMap(array, callback) {
     let result = [];
     for (let i = 0; i < array.length; i++) {
         result.push(callback(array[i]));
     }
     return result;
 }
-console.log(myMAP([1, 2, 3, 4, 5], square));
+
+function square(number) {
+    return number * number;
+}
+
+console.log(myMap([1,2,3,4,5], square));
