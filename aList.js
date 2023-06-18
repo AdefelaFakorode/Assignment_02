@@ -91,4 +91,4 @@ function nth(array, number, index = 0) {
   return nth(array, number, index + 1);
 }
 
-console.log(nth(listToArray(head), 1, index = 0))
+console.log(nth(listToArray(head), 1, index = 0));
