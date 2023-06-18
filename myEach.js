@@ -8,5 +8,5 @@ function square(number) {
   console.log(number * number);
 }
 
-let arr = [1, 2, 3, 4];
+let arr = [1,2,3,4,5];
 console.log(myEach(arr, square));
