@@ -26,7 +26,7 @@ function Filter(words, callback) {
 }
 
 let arr = [
-  "superman",
+  "Superman",
   "spiderman",
   "miles morales",
   "peter parker",

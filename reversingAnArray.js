@@ -6,5 +6,5 @@ function reverseArray(array) {
   }
   return stack;
 }
-let letters = ["A", "B", "C"];
+let letters = ["A", "B", "C","D"];
 console.log(reverseArray(letters));

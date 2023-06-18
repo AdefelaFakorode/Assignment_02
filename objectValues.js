@@ -1,18 +1,18 @@
-let Student ={
-    name: 'Adefela',
-    age: 21,
-    gradClass: 2024,
-    sport: 'Basketball'  
+let Student = {
+  name: "Adefela",
+  age: 21,
+  gradClass: 2024,
+  sport: "Baseball",
 };
 
-function grabValues(obj){
-    let listOfVal = [];
-    for(let key in obj){
-        if(obj.hasOwnProperty(key)){
-            listOfVal.push(obj[key]);
-        }
+function grabValues(obj) {
+  let listOfVal = [];
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      listOfVal.push(obj[key]);
     }
-    return listOfVal;
+  }
+  return listOfVal;
 }
 
 console.log(grabValues(Student));

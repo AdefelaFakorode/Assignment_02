@@ -26,4 +26,4 @@ function mySome(array, callback) {
   }
   return false;
 }
-console.log(mySome([1, 4, 5, 67, 3, 8], evenNumber));
+console.log(mySome([1, 4, 5, 67, 3, 8, 9], evenNumber));

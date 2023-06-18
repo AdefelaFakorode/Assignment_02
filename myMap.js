@@ -10,15 +10,15 @@ console.log(myMap([1,2,3,4,5]))
 */
 
 function myMap(array, callback) {
-    let result = [];
-    for (let i = 0; i < array.length; i++) {
-        result.push(callback(array[i]));
-    }
-    return result;
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(callback(array[i]));
+  }
+  return result;
 }
 
 function square(number) {
-    return number * number;
+  return number * number;
 }
 
-console.log(myMap([1,2,3,4,5], square));
+console.log(myMap([1, 2, 3, 4, 5], square));

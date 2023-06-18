@@ -17,4 +17,4 @@ function sum(array) {
   return result;
 }
 
-console.log(sum(range(1, 10)));
+console.log(sum(range(0, 10)));

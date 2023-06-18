@@ -3,7 +3,7 @@ function isGreaterThreshold(value) {
 }
 
 function myEvery(array, callback) {
-    newList = [];
+  newList = [];
   for (let i = 0; i < array.length; i++) {
     let number = array[i];
     newList.push(callback(number));
@@ -11,6 +11,5 @@ function myEvery(array, callback) {
   return newList;
 }
 
-let array = [20, 30];
-
+let array = [20, 40];
 console.log(myEvery(array, isGreaterThreshold));
