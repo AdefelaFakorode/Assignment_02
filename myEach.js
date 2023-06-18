@@ -9,5 +9,4 @@ function square(number) {
 }
 
 let arr = [1, 2, 3, 4];
-
 console.log(myEach(arr, square));
