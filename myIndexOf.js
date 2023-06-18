@@ -1,13 +1,7 @@
-function Zoo(animal) {
-  if (animal == "Lion") {
-    return true;
-  }
-}
-
-function myIndexOf(array, callback) {
+function myIndexOf(array, target) {
   for (let i = 0; i < array.length; i++) {
     let animal = array[i];
-    if (callback(animal)) {
+    if (array[i] == target) {
       return i;
     }
   }
@@ -30,4 +24,4 @@ let animals = [
   "Lion",
 ];
 
-console.log(myIndexOf(animals, Zoo));
+console.log(myIndexOf(animals, 'Lion'));

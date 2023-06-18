@@ -1,14 +1,8 @@
-function Present(name) {
-  if (name === "Adefela") {
-    return true;
-  }
-}
-
-function lastIndexOf(array, callback) {
+function lastIndexOf(array, target) {
   let lastIndex = array.length - 1;
   for (let i = lastIndex; i >= 0; i--) {
     let name = array[i];
-    if (callback(name)) {
+    if (array[i] == target) {
       return i;
     }
   }
@@ -26,4 +20,4 @@ let Names = [
   "Jay",
 ];
 
-console.log(lastIndexOf(Names, Present));
+console.log(lastIndexOf(Names, 'Adefela'));

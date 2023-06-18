@@ -1,13 +1,7 @@
-function isHeSpiderMan(value) {
-  if (value == "Peter Parker") {
-    return true;
-  }
-}
-
-function myInclude(array, callback) {
+function myInclude(array, target) {
   for (let i = 0; i < array.length; i++) {
     let val = array[i];
-    if (callback(val)) {
+    if (val == target) {
       return true;
     }
   }
@@ -28,6 +22,6 @@ console.log(
       2,
       "Miles Morales",
     ],
-    isHeSpiderMan
+    'Bruce Wayne'
   )
 );
